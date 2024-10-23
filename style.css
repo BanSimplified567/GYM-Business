@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300..700&display=swap');
+
+:root {
+  --color-one: #ff7907;
+  --color-two: #f5f5f5;
+  --color-three: #222222;
+  --color-four: #646161;
+  --color-five: #131313;
+  --color-six: #ffffff;
+
+  --font-title: "Signika", sans-serif;
+  --font-paragraph: "Roboto", sans-serif;
+
+  /* --font-xxl: 5rem;
+  --font-xl: 3.5rem;
+  --font-lg: 2.5rem;
+  --font-md: 1.5rem;
+  --font-sm: 1rem;
+  --font-xs: 0.87rem; */
+
+  --font-xxl: clamp(4rem, 5vw, 6rem);
+  --font-xl: clamp(3rem, 4vw, 4.5rem);
+  --font-lg: clamp(2rem, 3vw, 3rem);
+  --font-md: clamp(1.2rem, 2.5vw, 2rem);
+  --font-sm: clamp(0.9rem, 2vw, 1.3rem);
+  --font-xs: clamp(0.75rem, 1.5vw, 1rem);
+
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-paragraph);
+  background-color: var(--color-five);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+
+
+p {
+  font-family: var(--font-paragraph);
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-one);
+  color: var(--color-two);
+  font-family: var(--font-title);
+}
+
+.header-title {
+  font-family: var(--font-title);
+  font-size: var(--font-xxl);
+}
+
+.header-paragraph {
+  font-weight: 500;
+  font-family: var(--font-paragraph);
+  font-size: var(--font-sm);
+}
+
+
+.container-section-one {
+  margin: 3rem;
+  border-radius: 3rem;
+  background-color: var(--color-two);
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  gap: 10rem;
+  align-items: center;
+  padding: 3rem;
+}
+
+
+
+.header a {
+  transition: all 0.2s;
+  color: var(--color-three);
+}
+
+.header a:hover {
+  color: var(--color-one);
+}
+
+.header img {
+  width: 5rem;
+}
+
+.header-btn-sign-up {
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.section-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem;
+}
+
+.so-header {
+  position: relative;
+}
+
+.so-header h1 {
+  position: relative;
+  word-wrap: break-word;
+  max-width: 100%;
+
+}
+
+.so-header h1::before {
+  content: "THE BEST FITNESS CLUB IN THE TOWN";
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  color: var(--color-three);
+  font-size: var(--font-sm);
+  font-family: var(--font-paragraph);
+}
+
+.so-header img {
+  position: absolute;
+  z-index: -1;
+  width: 4rem;
+  top: 1rem;
+  right: 3rem;
+}
+
+.so-icon-button {
+  display: flex;
+  width: 70rem;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.so-icon-button img {
+  width: 10rem;
+}
+
+.section-one-btn {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.section-one-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  font-family: var(--font-paragraph);
+}
+
+.btn-section-one2 {
+  background-color: transparent;
+  border: 1px solid var(--color-one);
+  color: var(--color-three);
+}
+
+.section-two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 368px) and (max-width: 1300px) {
+  .section-two {
+    flex-wrap: wrap;
+  }
+}
+
+.st-img-one {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+.st-img-one img {
+  width: 40rem;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 2rem;
+}
+
+.st-img-one p {
+  word-break: keep-all;
+}
+
+.st-gym-two {
+  width: 45rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.section-three {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  padding: 2rem;
+  color: var(--color-six);
+  background-color: var(--color-three);
+}
+
+
+.section-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-six);
+}
+
+.sf-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sf-header h1 {}
+
+.sf-container-descriptions {
+  display: flex;
+}
+
+.sf-container-descriptions img {
+  width: 20rem;
+  height: auto;
+  max-width: 100%;
+}
